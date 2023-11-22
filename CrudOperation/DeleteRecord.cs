@@ -16,7 +16,6 @@ namespace CrudOperation
             using (SqlConnection connection = new SqlConnection(DBConnection.dbConnectionString))
             {
                 String query = $" DELETE FROM Student WHERE id = {studentid}";
-                // String query = $" DELETE FROM Student WHERE id = {student.id}";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
